@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <title>Waka Vape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="languageScreen" class="language-screen">
+    <div class="language-card">
+      <div class="brand big-brand">WAKA <b>VAPE</b></div>
+      <div class="eyebrow">WAKA VAPE</div>
+      <h1>Choose your language</h1>
+      <div class="language-choice">
+        <button data-first-lang="en">English</button>
+        <button data-first-lang="ru">Русский</button>
+        <button data-first-lang="ka">ქართული</button>
+      </div>
+    </div>
+  </section>
+
+  <header class="topbar">
+    <button id="menuBtn" class="icon-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="brand">WAKA <b>VAPE</b></div>
+    <button id="langTop" class="lang-pill">EN</button>
+  </header>
+
+  <aside id="drawer" class="drawer">
+    <div class="drawer-head">
+      <div class="brand">WAKA <b>VAPE</b></div>
+      <button id="closeDrawer" class="close-btn">×</button>
+    </div>
+    <nav>
+      <button class="drawer-link" data-action="home" data-i18n="home">Главная</button>
+      <button class="drawer-link" data-action="about" data-i18n="about">О нас</button>
+      <button class="drawer-link" data-action="catalog" data-i18n="catalog">Каталог</button>
+    </nav>
+    <div class="drawer-bottom">
+      <div class="drawer-label" data-i18n="language">Язык</div>
+      <div class="language-grid">
+        <button data-lang="ru">Русский</button>
+        <button data-lang="ka">ქართული</button>
+        <button data-lang="en">English</button>
+      </div>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <main id="appMain">
+    <section id="homeSection" class="hero home-screen">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="eyebrow">WAKA VAPE</div>
+        <h1 data-i18n="heroTitle">WAKA VAPE<br><span>приветствует вас</span></h1>
+        <p data-i18n="heroText">Продажа WAKA по странам СНГ с платной или бесплатной доставкой в зависимости от вашего местоположения.</p>
+
+        <div class="menu-prompt">
+          <div class="menu-icon-large" aria-hidden="true"><span></span><span></span><span></span></div>
+          <h2 data-i18n="chooseMenu">Выберите меню, перейдите в каталог</h2>
+          <p data-i18n="chooseMenuText">Откройте ☰ слева сверху и выберите нужную модель WAKA.</p>
+        </div>
+
+        <div class="hero-buttons">
+          <button class="primary" data-action="catalog" data-i18n="viewCatalog">Смотреть каталог</button>
+          <button class="secondary" data-action="about" data-i18n="aboutUs">О нас</button>
+        </div>
+        <div class="hero-note" data-i18n="legalHero">Никотиновая продукция. Только для совершеннолетних по законам вашей страны.</div>
+      </div>
+      <div class="hero-product">
+        <div class="product-orbit"></div>
+        <img src="https://www.wakavaping.com/cdn/shop/files/pa10000.jpg?v=1688106071" alt="WAKA">
+        <div class="spec-chip chip-one">WAKA<br><small>VAPE</small></div>
+        <div class="spec-chip chip-two">SO<br><small>PRO</small></div>
+      </div>
+    </section>
+
+    <section id="catalogSection" class="page-section catalog-selector hidden-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">WAKA VAPE</div>
+          <h2 data-i18n="catalogTitle">Каталог</h2>
+        </div>
+        <div class="catalog-info" data-i18n="catalogChoose">Выберите модель</div>
+      </div>
+
+      <div class="model-grid">
+        <button class="model-card" data-model="10000">
+          <div class="model-image"><img src="https://www.wakavaping.com/cdn/shop/files/pa10000.jpg?v=1688106071" alt="WAKA soPro PA10000"></div>
+          <div class="model-copy">
+            <div class="eyebrow">WAKA SO PRO</div>
+            <h3>Waka 10 000</h3>
+            <p data-i18n="model10Text">Каталог вкусов WAKA 10 000.</p>
+          </div>
+          <span class="model-arrow">→</span>
+        </button>
+
+        <button class="model-card" data-model="30000">
+          <div class="model-image"><img src="https://www.theoriginalvape.com/web/image/product.product/1923/image_1920?unique=39c7895" alt="WAKA soPro Titan 30000"></div>
+          <div class="model-copy">
+            <div class="eyebrow">WAKA SO PRO TITAN</div>
+            <h3>Waka 30 000</h3>
+            <p data-i18n="model30Text">Каталог вкусов WAKA 30 000.</p>
+          </div>
+          <span class="model-arrow">→</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="productsSection" class="page-section hidden-section">
+      <div class="section-heading">
+        <div>
+          <button id="backToCatalog" class="back-btn">← <span data-i18n="backToCatalog">Каталог</span></button>
+          <div id="modelEyebrow" class="eyebrow">WAKA SO PRO</div>
+          <h2 id="productsTitle">Waka 10 000</h2>
+        </div>
+        <div id="productsInfo" class="catalog-info"></div>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section class="info-strip">
+      <div><strong>10K / 30K</strong><span data-i18n="statPuffs">до затяжек</span></div>
+      <div><strong>TYPE-C</strong><span data-i18n="statCharge">зарядка*</span></div>
+      <div><strong>DUAL MESH</strong><span data-i18n="statCoil">система испарения*</span></div>
+      <div><strong>WAKA</strong><span data-i18n="statBrand">официальная линейка*</span></div>
+    </section>
+
+    <section class="about-preview">
+      <div>
+        <div class="eyebrow">WAKA VAPE</div>
+        <h2 data-i18n="deliveryTitle">Доставка и информация</h2>
+        <p data-i18n="deliveryText">Условия доставки, наличие, цены и допустимость никотиновой продукции зависят от страны и действующего законодательства. Уточняйте детали перед заказом.</p>
+      </div>
+      <button class="secondary" data-action="about" data-i18n="contacts">Контакты и локации</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">WAKA <b>VAPE</b></div>
+    <p data-i18n="footer">Информационная страница. Никотин вызывает зависимость. Не является медицинской рекомендацией.</p>
+  </footer>
+
+  <div id="orderModal" class="modal">
+    <div class="modal-card order-card">
+      <button class="modal-close" data-close="orderModal">×</button>
+      <div id="orderStepLocation" class="order-step">
+        <div class="eyebrow">WAKA VAPE</div><h2 data-i18n="orderFrom">Откуда вы</h2>
+        <p class="order-subtitle" data-i18n="orderFromText">Выберите страну доставки.</p>
+        <div id="countryChoices" class="order-choices"></div>
+        <button id="otherCountryBtn" class="order-choice other-choice" data-i18n="other">Другой</button>
+      </div>
+      <div id="orderStepCity" class="order-step hidden">
+        <div class="eyebrow">WAKA VAPE</div><h2 data-i18n="chooseCity">Выберите город</h2>
+        <p class="order-subtitle" id="selectedCountryText"></p><div id="cityChoices" class="order-choices"></div>
+      </div>
+      <div id="orderStepQuantity" class="order-step hidden">
+        <div class="eyebrow">WAKA VAPE</div><h2 data-i18n="quantityTitle">Уточните кол-во</h2>
+        <p class="order-subtitle" id="orderProductText"></p>
+        <div class="quantity-control"><button id="quantityMinus" type="button">−</button><strong id="quantityValue">1</strong><button id="quantityPlus" type="button">+</button></div>
+        <button id="sellerOrderBtn" class="primary order-seller-btn" data-i18n="orderSeller">Заказать у продавца</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="productModal" class="modal">
+    <div class="modal-card product-modal-card">
+      <button class="modal-close" data-close="productModal">×</button>
+      <div class="modal-product">
+        <div class="modal-image"><img id="modalImage" src="" alt=""></div>
+        <div class="modal-copy">
+          <div id="modalEyebrow" class="eyebrow">WAKA SO PRO</div>
+          <h2 id="modalTitle"></h2>
+          <p id="modalDesc"></p>
+          <div id="modalTags" class="tags"></div>
+          <div class="modal-price" id="modalPrice"></div>
+          <small class="muted" data-i18n="priceNote">Цена и крепость никотина зависят от рынка — уточняйте актуальные значения.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="aboutModal" class="modal">
+    <div class="modal-card about-card">
+      <button class="modal-close" data-close="aboutModal">×</button>
+      <div class="eyebrow">WAKA VAPE</div>
+      <h2 data-i18n="aboutTitle">О нас</h2>
+      <p data-i18n="aboutBody">Мы собираем актуальный каталог WAKA и помогаем уточнить наличие, стоимость и условия доставки.</p>
+      <div class="contact-cards about-contacts">
+        <a class="telegram-contact" href="https://t.me/DreamG1r" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <div class="locations-contact"><span>📍</span><strong data-i18n="locations">Локации</strong><p>Россия — Москва, Питер, Новосибирск<br>Kазахстан — Алмата, Астана<br>Грузия</p></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script src="script.js"></script>
+<!-- WAKA support robot -->
+<div class="support-widget" id="supportWidget">
+  <button class="support-bubble" id="supportBubble" type="button" aria-label="Support">
+    <canvas id="wakaRobot3D" class="support-robot-canvas" aria-label="Waka 3D support robot"></canvas>
+  </button>
+
+  <div class="support-overlay" id="supportOverlay" aria-hidden="true">
+    <section class="support-chat" id="supportPanel" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
+      <div class="support-head">
+        <div>
+          <div class="support-title" id="supportTitle">Чем могу помочь?</div>
+          <div class="support-subtitle" id="supportSubtitle">Выберите вопрос</div>
+        </div>
+        <button class="support-close" id="supportClose" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="support-chat-body" id="supportChatBody">
+        <div class="support-message bot" id="supportGreeting">Здравствуйте! Чем могу помочь?</div>
+        <div class="support-questions" id="supportQuestions"></div>
+        <div class="support-answer" id="supportAnswer" hidden>
+          <div class="support-answer-body" id="supportAnswerText"></div>
+          <div class="support-actions">
+            <button class="support-action secondary" id="supportBack" type="button"><span id="supportAnswerBackText">← Назад к вопросам</span></button>
+            <button class="support-action secondary" id="supportAnother" type="button"><span id="supportAnotherText">Задать другой вопрос</span></button>
+            <a class="support-action primary" id="supportContact" href="https://t.me/lnternationa1" target="_blank" rel="noopener noreferrer"><span id="supportContactText">Связаться с администратором</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>
