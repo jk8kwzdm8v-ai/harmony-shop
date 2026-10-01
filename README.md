@@ -1,0 +1,1 @@
+Harmony Shop — финальная зелёная версия. Загружайте index.html, styles.css и всю папку assets в корень GitHub Pages.
