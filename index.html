@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Harmony Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer">
+<button class="x" id="close">×</button><div class="drawer-brand">Harmony <small>Shop</small></div>
+<nav>
+<button data-go="home">⌂ <span>Главная</span></button><button data-go="catalog">▦ <span>Каталог</span></button><button data-go="about">ⓘ <span>О нас</span></button>
+</nav>
+<div class="label">КАТЕГОРИИ</div>
+<nav id="catnav"></nav>
+<div class="label">КОНТАКТЫ</div>
+<a href="https://www.google.com/maps/search/?api=1&query=Tsotne+Dadiani+21+Tbilisi">⌖ Тбилиси, Цотне Дадиани, 21</a>
+<a href="tel:+995599044813">⌕ +995 599 04 48 13</a>
+</aside>
+
+<header><button class="menu" id="open">☰</button><div class="logo">Harmony Shop<small>ЛЕНТЫ · БАХРОМА · ТЕСЬМА · ФУРНИТУРА</small></div><a class="phone" href="tel:+995599044813">⌕</a></header>
+
+<main>
+<section class="hero" id="home"><div class="hero-copy"><div class="eyebrow">HARMONY SHOP · TBILISI</div>
+<h1>Детали,<br><em>которые создают</em><br>образ.</h1>
+<p>Ленты, бахрома, тесьма и декоративная фурнитура для одежды, интерьера и творческих проектов.</p>
+<button class="primary" data-go="catalog">Перейти в каталог <b>→</b></button></div>
+<div class="hero-art"><i class="roll r1"></i><i class="roll r2"></i><i class="roll r3"></i><i class="gold"></i><i class="fringe"></i><i class="leaf">❧</i></div></section>
+
+<section class="cats" id="cats"></section>
+
+<section class="catalog" id="catalog"><div class="head"><div><div class="eyebrow">КАТАЛОГ</div><h2>Популярные товары</h2></div><p>Выберите материал — мы подскажем<br>варианты по ширине, длине и назначению.</p></div>
+<div class="filters" id="filters"></div><div class="products" id="products"></div></section>
+
+<section class="about" id="about"><div><div class="eyebrow">О HARMONY SHOP</div><h2>Материалы,<br><em>которые хочется</em><br>трогать.</h2></div>
+<div><p>Мы собрали в одном месте декоративные материалы для тех, кто любит красивые детали: от классической бахромы до необычной тесьмы и мягких лент.</p>
+<div class="contacts"><a href="https://www.google.com/maps/search/?api=1&query=Tsotne+Dadiani+21+Tbilisi"><small>АДРЕС</small><b>Тбилиси, Цотне Дадиани, 21</b></a><a href="tel:+995599044813"><small>ТЕЛЕФОН</small><b>+995 599 04 48 13</b></a></div></div></section>
+</main>
+<footer><b>Harmony Shop</b><span>Декоративные материалы в Тбилиси</span><a href="tel:+995599044813">Позвонить →</a></footer>
+
+<div class="modal-bg" id="modal"><div class="modal"><button class="x" id="mclose">×</button><div id="mvisual"></div><div class="minfo"><div class="eyebrow" id="mcat"></div><h3 id="mtitle"></h3><p id="mdesc"></p><div id="mtags" class="tags"></div><a class="primary" href="tel:+995599044813">Уточнить наличие <b>→</b></a></div></div></div>
+<script src="script.js"></script>
+</body></html>
